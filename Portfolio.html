@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(rgba(10, 25, 47, 0.97), rgba(10, 25, 47, 0.97)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ccd6f6;
+        }
+        .accent-color {
+            color: #64ffda;
+        }
+        .section-heading {
+            color: #ccd6f6;
+        }
+        .card-bg {
+            background-color: #112240;
+        }
+        .nav-link:hover {
+            color: #64ffda;
+        }
+        .project-link:hover {
+            color: #64ffda;
+        }
+        .social-link:hover {
+            color: #64ffda;
+            transform: translateY(-3px);
+        }
+        .tag {
+            background-color: #1a3a6e;
+            color: #64ffda;
+        }
+    </style>
+</head>
+<body class="leading-normal tracking-normal">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full z-30 top-0 text-white bg-opacity-90 backdrop-blur-sm shadow-lg" style="background-color: rgba(10, 25, 47, 0.85);">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4 px-6">
+            <div class="pl-4 flex items-center">
+                <a class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-3xl accent-color" href="#">
+                    YN
+                </a>
+            </div>
+            <div class="block lg:hidden pr-4">
+                <button id="nav-toggle" class="flex items-center p-1 text-gray-400 hover:text-white focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center text-lg">
+                    <li class="mr-3"><a class="inline-block py-2 px-4 nav-link" href="#about">About</a></li>
+                    <li class="mr-3"><a class="inline-block py-2 px-4 nav-link" href="#skills">Skills</a></li>
+                    <li class="mr-3"><a class="inline-block py-2 px-4 nav-link" href="#projects">Projects</a></li>
+                    <li class="mr-3"><a class="inline-block py-2 px-4 nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 md:pt-32">
+        <!-- Hero Section -->
+        <section id="hero" class="flex flex-col-reverse md:flex-row items-center justify-center min-h-[75vh]">
+            <div class="md:w-3/5 text-center md:text-left">
+                <h1 class="text-xl md:text-2xl font-mono accent-color mb-4">Hi, my name is</h1>
+                <h2 class="text-4xl md:text-7xl font-bold text-gray-200">Matthew Maeger L. Paiste.</h2>
+                <h3 class="text-3xl md:text-5xl font-bold text-gray-400 mt-2">I build things for the web.</h3>
+                <p class="mt-6 text-lg max-w-xl">
+                    I'm a recent Computer Science graduate specializing in software development. I'm passionate about creating clean, efficient code and building user-friendly applications. Currently seeking a full-time role as a Software Engineer.
+                </p>
+                <div class="mt-8">
+                    <a href="#projects" class="font-mono text-lg accent-color border border-[#64ffda] rounded px-8 py-4 hover:bg-[#64ffda] hover:bg-opacity-10 transition duration-300">
+                        Check out my work!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <span class="accent-color font-mono text-2xl mr-3">01.</span>
+                <span class="section-heading">About Me</span>
+                <span class="h-px bg-gray-600 flex-grow ml-6"></span>
+            </h2>
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-2/3 text-lg">
+                    <p class="mb-4">
+                        Hello! I'm [Your Name], and I enjoy creating things that live on the internet. My interest in software development started back in university when I decided to build a custom application for a class project — this taught me a lot about the entire development lifecycle and ignited my passion for coding.
+                    </p>
+                    <p class="mb-4">
+                        Fast-forward to today, and I've had the privilege of working on several academic and personal projects. My main focus these days is building accessible, inclusive products and digital experiences.
+                    </p>
+                    <p>
+                        I'm a quick learner, a collaborative team player, and I'm excited to apply my skills to real-world challenges.
+                    </p>
+                </div>
+                 <div class="md:w-1/3 flex justify-center items-start">
+                    <div class="w-64 h-64 relative group">
+                        <div class="absolute inset-0 bg-gray-800 rounded-lg transform transition duration-300 group-hover:rotate-6"></div>
+                        <img src="https://placehold.co/400x400/112240/64ffda?text=Your+Photo" alt="Your Name" class="rounded-lg relative z-10">
+                        <div class="absolute inset-0 bg-[#64ffda] rounded-lg opacity-20 group-hover:opacity-0 transition duration-300"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <span class="accent-color font-mono text-2xl mr-3">02.</span>
+                <span class="section-heading">My Skills</span>
+                <span class="h-px bg-gray-600 flex-grow ml-6"></span>
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 font-mono">
+                <!-- Replace with your skills -->
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>JavaScript (ES6+)</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>Python</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>Java</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>React</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>Node.js</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>Express</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>SQL (PostgreSQL)</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>NoSQL (MongoDB)</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>HTML5 & CSS3</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>Tailwind CSS</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>Git & GitHub</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>REST APIs</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>Docker</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>Figma</div>
+                <div class="flex items-center"><span class="accent-color mr-2">▹</span>Agile Methodologies</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <span class="accent-color font-mono text-2xl mr-3">03.</span>
+                <span class="section-heading">Projects I've Built</span>
+                <span class="h-px bg-gray-600 flex-grow ml-6"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="card-bg p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <div class="flex space-x-4">
+                            <a href="#" class="project-link transition duration-300" aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="#" class="project-link transition duration-300" aria-label="External Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 section-heading">Project Title One</h3>
+                    <p class="text-gray-400 mb-4">A brief description of your project. Explain the problem it solves, your role, and the technologies you used. Keep it concise and impactful.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-sm">
+                        <span class="tag px-2 py-1 rounded">React</span>
+                        <span class="tag px-2 py-1 rounded">Node.js</span>
+                        <span class="tag px-2 py-1 rounded">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card-bg p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <div class="flex space-x-4">
+                            <a href="#" class="project-link transition duration-300" aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="#" class="project-link transition duration-300" aria-label="External Link">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 section-heading">Project Title Two</h3>
+                    <p class="text-gray-400 mb-4">A brief description of your project. Explain the problem it solves, your role, and the technologies you used. Keep it concise and impactful.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-sm">
+                        <span class="tag px-2 py-1 rounded">Python</span>
+                        <span class="tag px-2 py-1 rounded">Flask</span>
+                        <span class="tag px-2 py-1 rounded">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card-bg p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <div class="flex space-x-4">
+                            <a href="#" class="project-link transition duration-300" aria-label="GitHub Link">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <!-- No external link for this one -->
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 section-heading">Project Title Three</h3>
+                    <p class="text-gray-400 mb-4">A brief description of your project. Explain the problem it solves, your role, and the technologies you used. Keep it concise and impactful.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-sm">
+                        <span class="tag px-2 py-1 rounded">Java</span>
+                        <span class="tag px-2 py-1 rounded">Spring Boot</span>
+                        <span class="tag px-2 py-1 rounded">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+             <h2 class="text-3xl font-bold mb-4 flex items-center justify-center">
+                <span class="accent-color font-mono text-2xl mr-3">04.</span>
+                <span class="section-heading">What’s Next?</span>
+            </h2>
+            <h3 class="text-4xl md:text-5xl font-bold text-gray-200 mb-4">Get In Touch</h3>
+            <p class="max-w-2xl mx-auto mb-8">
+                I'm currently open to new opportunities and would love to chat. Whether you have a question or just want to say hi, feel free to reach out. I'll do my best to get back to you!
+            </p>
+            <a href="mailto:youremail@example.com" class="font-mono text-lg accent-color border border-[#64ffda] rounded px-8 py-4 hover:bg-[#64ffda] hover:bg-opacity-10 transition duration-300">
+                Say Hello
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8">
+        <div class="flex items-center justify-center space-x-6 mb-4">
+             <!-- Replace # with your social links -->
+            <a href="#" class="social-link" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+        </div>
+        <p class="font-mono text-sm text-gray-500">Built by Your Name, © 2025</p>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navContent = document.getElementById('nav-content');
+        navToggle.addEventListener('click', function() {
+            navContent.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                navContent.classList.add('hidden'); // Close nav on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
